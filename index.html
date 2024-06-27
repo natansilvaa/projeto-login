@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
+                <img src="imagens/WhatsApp Image 2024-06-06 at 10.17.34.jpe" alt="">
             </div>
             <div id="formulario">
                 <h1>login</h1>
                 <p> seja bem vindo (a) novamente. faça login para sua conta e poder fazer as configurações do seu ambiente,</p>
-                <form action="" method="post"></form>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div>
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="e-mail" id="ie-mail" placeholder="seu e-mail" autocomplete="email">
+                         <label for="ie-mail">e-mail</label>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password">
+                        <label for="isenha">senha</label>
+                    </div>
+                    <input type="submit" value="enviar">
+                    <a href="esqueci.html">esqueci a senha  <span class="material-symbols-outlined">mail</span></a>
+                </form>
             </div>
         </section>
     </main>
